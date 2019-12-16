@@ -1,0 +1,40 @@
+.container-landing {
+   margin: 5vw 2vw auto 2vw;
+}
+
+.container-compsummary {
+   margin: 2vw 5vw auto 5vw;
+}
+
+.competition-content {
+   float: left;
+   width: 45%;
+   margin-top: 5vw;
+}
+
+.team:hover {
+   cursor: pointer;
+   color: blue;
+}
+
+iframe {
+   float: right;
+   overflow: scroll;
+}
+
+.heading {
+   font-size: 2vw;
+   margin: 10px;
+}
+
+form {
+   margin: 10px;
+}
+label {
+   margin-right:5px;
+}
+img {
+   width: 10vw;
+   height: auto;
+   margin: 10px;
+}

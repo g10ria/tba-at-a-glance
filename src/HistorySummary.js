@@ -55,9 +55,18 @@ let HistorySummary = ({team, events, eventResults}) => {
 
 			</div>
 
+            <br></br>
+            <br></br>
+         <form onSubmit={returnToLanding}>
+            <input type="submit" value="Back" />
+         </form>
 
 		</div>
 	);
+}
+
+function returnToLanding() {
+   window.location.href="/"
 }
 
 const YearSummary = ({events, year, eventResults}) => {
@@ -81,8 +90,6 @@ const YearSummary = ({events, year, eventResults}) => {
 	yearsEvents = [...yearsEvents, ...eventYear.filter(e => e.event_type === 3).slice(0,1)];
 	yearsEvents = [...yearsEvents, ...eventYear.filter(e => e.event_type === 4).slice(0,1)];
 	yearsEvents = [...yearsEvents, ...eventYear.filter(e => e.event_type === 6).slice(0,1)];
-	console.log(yearsEvents);
-
 
 	// yearsEvents.concat(eventYear[1].slice(0,2));
 	// console.log(eventYear[1].slice(0,2));
